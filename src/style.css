@@ -74,3 +74,9 @@ input::placeholder {
 .clear li {
   color: #807f7f;
 }
+
+.clear-list {
+  text-align: center;
+  text-decoration: underline;
+  padding-top: 20px;
+}
