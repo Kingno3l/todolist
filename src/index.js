@@ -49,16 +49,48 @@ const dataToDoList = [
   },
 ];
 
-const addListItem = () => {
-  const containerList = document.getElementById('list-container');
-  for (const listItem of dataToDoList) {
-    containerList.innerHTML += `
+dataToDoList.forEach((n) => {
+  var output = n.description;
+
+  const containerList = document.getElementById("list-container");
+  containerList.innerHTML += `
       <li class="list-to-do">
         <input type="checkbox" class="to-do">
-        ${listItem.description}
+        ${output}
         <i class="fa-solid fa-trash"></i>
       </li>
       <hr class="line">
     `;
-  }
-};
+
+  console.log(n.description);
+});
+
+// const addListItem = () => {
+// const containerList = document.getElementById("list-container");
+// dataToDoList.forEach((n) => {
+//     containerList.innerHTML += `
+//       <li class="list-to-do">
+//         <input type="checkbox" class="to-do">
+//         ${n.description}
+//         <i class="fa-solid fa-trash"></i>
+//       </li>
+//       <hr class="line">
+//     `;
+//   })
+// };
+
+
+// const addListItem = () => {
+//   const containerList = document.getElementById('list-container');
+//   for (const listItem of dataToDoList) {
+//     containerList.innerHTML += `
+//       <li class="list-to-do">
+//         <input type="checkbox" class="to-do">
+//         ${dataToDoList}
+//         <i class="fa-solid fa-trash"></i>
+//       </li>
+//       <hr class="line">
+//     `;
+//   }
+// };
+
