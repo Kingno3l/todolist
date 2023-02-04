@@ -1,6 +1,6 @@
 // import _ from "lodash";
 // import printMe from "./print.js";
- import "./style.css";
+import './style.css';
 
 // function component() {
 //   const element = document.createElement("div");
@@ -18,7 +18,6 @@
 // }
 
 // document.body.appendChild(component());
-
 
 /* eslint-disable no-restricted-syntax */
 const dataToDoList = [
@@ -50,9 +49,9 @@ const dataToDoList = [
 ];
 
 dataToDoList.forEach((n) => {
-  var output = n.description;
+  const output = n.description;
 
-  const containerList = document.getElementById("list-container");
+  const containerList = document.getElementById('list-container');
   containerList.innerHTML += `
       <li class="list-to-do">
         <input type="checkbox" class="to-do">
@@ -61,8 +60,6 @@ dataToDoList.forEach((n) => {
       </li>
       <hr class="line">
     `;
-
-  console.log(n.description);
 });
 
 // const addListItem = () => {
@@ -79,7 +76,6 @@ dataToDoList.forEach((n) => {
 //   })
 // };
 
-
 // const addListItem = () => {
 //   const containerList = document.getElementById('list-container');
 //   for (const listItem of dataToDoList) {
@@ -93,4 +89,3 @@ dataToDoList.forEach((n) => {
 //     `;
 //   }
 // };
-
